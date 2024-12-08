@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Helper</title>
+    <link rel="stylesheet" href="studyHelperStyles.css">
+</head>
+<body>
+    <header>
+    <div class="left-header">
+        <div id="current-time"></div>
+    </div>
+    <div class="right-header">
+        <img src="images/studyHelper1/Cellular Connection.svg" alt="Cellular Connection Icon">
+        <img src="images/studyHelper1/Wifi.svg" alt="Wifi Icon">
+        <img src="images/studyHelper1/Battery.svg" alt="Battery Icon">
+    </div>
+</header>
+
+    <main>
+        <h1>Study Helper</h1>
+
+        <div class="title-container">
+            <h3>Timer</h3>
+            <img src="images/studyHelper1/Info.svg" alt="Info Icon" class="info-button">
+        </div>
+        <section class="timer-section">
+            <div class="time-display">0 hours 0 min 0 sec</div>
+            <div class="controls">
+                <button class="button start" aria-label="Start Timer">Start</button>
+                <button id="stopButton" class="button stop" aria-label="Stop Timer">Stop</button>
+            </div>
+        </section>
+    
+        <div class="title-container">
+            <h3>Accessibility</h3>
+            <img src="images/studyHelper1/Info.svg" alt="Info Icon" class="info-button">
+        </div>
+        <section class="accessibility-section">
+            <div class="sections">
+                <a href="#contact-link" class="section" id="contact">
+                    <div>Contact</div>
+                </a>
+                <a href="#application-link" class="section" id="application">
+                    <div>Application</div>
+                </a>
+            </div>
+        </section>
+        
+        <div class="title-container">
+            <h3>White Noise</h3>
+            <img src="images/studyHelper1/Info.svg" alt="Info Icon" class="info-button">
+        </div>
+        <section class="noise-section">
+            <ul>
+                <li class="noise-option" data-sound="sounds/Rain.mp3">Rain<span class="playing-indicator"></span></li>
+                <li class="noise-option" data-sound="sounds/Ocean.mp3">Ocean<span class="playing-indicator"></span></li>
+                <li class="noise-option" data-sound="sounds/Fan.mp3">Fan<span class="playing-indicator"></span></li>
+                <li class="noise-option" data-sound="sounds/Stream.mp3">Stream<span class="playing-indicator"></span></li>
+            </ul>
+        </section>
+
+        <div class="popup-contact-modal" id="contactModal">
+            <div class="popup-content">
+                <h3>Contacts</h3>
+                <button class="close-btn" id="closeModal">&times;</button>
+                <ul class="contact-list">
+                    <li><img src="images/studyHelper2/Profile Picture.svg" alt="User Icon"> Gamora</li>
+                    <li><img src="images/studyHelper2/Profile Picture.svg" alt="User Icon"> Peter Quill</li>
+                    <li><img src="images/studyHelper2/Profile Picture.svg" alt="User Icon"> Drax the Destroyer</li>
+                    <li><img src="images/studyHelper2/Profile Picture.svg" alt="User Icon"> Groot</li>
+                    <li><img src="images/studyHelper2/AddProfile.svg" alt="Add Icon"> + Add Contact</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="popup-modal" id="applicationModal">
+            <div class="popup-content">
+                <h3>Applications</h3>
+                <button class="close-btn" id="closeApplicationModal">&times;</button>
+                <div class="application-list">
+                    <div class="app-item">
+                        <img src="images/studyHelper3/Podcasts.png" alt="Podcast Icon">
+                        <p>Podcast</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/studyHelper3/Music.png" alt="Music Icon">
+                        <p>Music</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/studyHelper3/GarageBand.png" alt="Garage Band Icon">
+                        <p>Garage Band</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/studyHelper3/Books.png" alt="Books Icon">
+                        <p>Books</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/studyHelper3/Add.svg" alt="Add App Icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="menu-bar">
+        <div class="menu-item">
+            <a href="home.html">
+                <img src="images/studyHelper1/HomeScreen.svg" alt="Home">
+                <!-- <span>Home</span> -->
+            </a>
+        </div>
+        <div class="menu-item">
+            <img src="images/studyHelper1/StudyHelper1.svg" alt="StudyHelper">
+        </div>
+        <div class="menu-item">
+            <a href="scheduleManager.html">
+                <img src="images/studyHelper1/ScheduleManager.svg" alt="ScheduleManager">
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="screentimeController.html">
+                <img src="images/studyHelper1/ScreentimeController.svg" alt="ScreentimeController">
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="community.html">
+                <img src="images/studyHelper1/Community.svg" alt="Community">
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts/studyHelper/updateTime.js"></script>
+    <script src="scripts/studyHelper/timer.js"></script>
+    <script src="scripts/studyHelper/whiteNoise.js"></script>
+    <script src="scripts/studyHelper/openContactModal.js"></script>
+    <script src="scripts/studyHelper/openAppModal.js"></script>
+</body>
+</html>
